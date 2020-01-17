@@ -23,4 +23,4 @@ app.use(routes)
 // Route Params: request.params (Identificar um recurso na alteração ou remoção)
 // Body: request.body (Dados para criação ou alteração de um registro)
 
-app.listen(3333, () => console.log('rodando na porta 3333'));
+app.listen(process.env.PORT || 3333);
